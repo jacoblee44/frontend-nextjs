@@ -1,0 +1,16 @@
+export enum CORRELATION_IDS {
+  LOGIN = "login",
+  OTP_CHECK = "otpCheck",
+  FORGOT_PASSWORD = "forgotPassword",
+  RESET_PASSWORD = "resetPassword",
+  SIGNUP = "signup",
+  LOGIN_SSO = "loginSSO",
+  LOGOUT = "logout",
+  CREATE_EMPLOYER = "createEmployer",
+  UPDATE_ACCOUNTTYPE = "updateAccounttype",
+  UPDATE_PHONENUMBER = "updatePhonenumber",
+  UPDATE_EMAILADDRESS = "updateEmailaddress",
+  UPDATE_CHANGEPASSWORD = "updateChangepassword",
+  UPDATE_ACCOUNTNAME = "updateAccountname",
+  UPDATE_DEALQUES = "updateDealQuestions",
+}

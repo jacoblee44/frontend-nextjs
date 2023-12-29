@@ -1,0 +1,28 @@
+name: Deploy app
+
+on:
+  workflow_dispatch:
+    branches: [ main ]
+  push:
+    branches: [ main ]                        
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+            cd /code/dayratework
+            git checkout package-lock.json && git checkout yarn.lock
+            git pull
+            npm install
+            pm2 restart 'npm run dev'
+            systemctl restart nginx
+

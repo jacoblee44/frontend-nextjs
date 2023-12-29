@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"name": "dayworkapp",
+			"path": "../../../../dayworkapp"
+		}
+	],
+	"settings": {}
+}

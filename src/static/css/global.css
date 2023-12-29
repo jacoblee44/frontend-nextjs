@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Montserrat fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Red Hat Text */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #fafafa;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*:not(.no-transition) {
+  box-sizing: border-box;
+  /*transition: all 0.3s !important;*/
+}
+
+.MuiAutocomplete-popper {
+  transition: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: #ffffff;
+  }
+}
+
+* {
+  font-family: "Red Hat Text", sans-serif !important;
+}
+
+@font-face {
+  font-family: digitalNumber;
+  src: url(./digital-7.ttf);
+}
+
+.digital-number {
+  font-family: digitalNumber, serif !important;
+}
